@@ -1,0 +1,17 @@
+::ng-deep .carousel-item.active {
+
+
+}
+
+::ng-deep .carousel-item.active > img{
+  height:auto;
+  width:100%;
+  border:1px solid red;
+
+}
+
+.carousel-caption {
+  position: relative;
+  left: auto;
+  right: auto;
+}
