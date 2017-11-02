@@ -1,8 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/scss/mixins';
 
 html, body{
   height:100%;
   color:white;
+  margin:0;
+  padding:0;
 }
 
 body {
@@ -12,4 +15,40 @@ body {
   font-size:16px;
   min-height:100%;
 }
+
+/*Font Section - Font Aileron*/
+@font-face {
+  font-family: "Aileron";
+  src: url("assets/fonts/Aileron-Regular.otf");
+}
+@font-face {
+  font-family: "Aileron";
+  src: url("assets/fonts/Aileron-Bold.otf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Aileron";
+  src: url("assets/fonts/Aileron-Italic.otf");
+  font-style:italic;
+}
+
+@font-face {
+  font-family: "Aileron";
+  src: url("assets/fonts/Aileron-Light.otf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Aileron";
+  src: url("assets/fonts/Aileron-SemiBold.otf");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Aileron";
+  src: url("assets/fonts/Aileron-Black.otf");
+  font-weight: 900;
+}
+
 

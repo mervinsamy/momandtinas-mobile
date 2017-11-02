@@ -8,6 +8,9 @@ import { FooterComponent } from './footer/footer.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { MenuCarouselComponent } from './menu-carousel/menu-carousel.component';
+import { HeaderComponent } from './header/header.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
 
 
 @NgModule({
@@ -17,13 +20,16 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     AnnouncementsComponent,
     FooterComponent,
     CarouselComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    MenuCarouselComponent,
+    HeaderComponent,
+    AboutusComponent
   ],
   imports: [
     BrowserModule,
     NgbModule.forRoot()
   ],
   providers: [],
-  bootstrap: [AppComponent, NavigationComponent, FooterComponent, CarouselComponent]
+  bootstrap: [AppComponent, FooterComponent, CarouselComponent]
 })
 export class AppModule { }

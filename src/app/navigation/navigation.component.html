@@ -1,50 +1,95 @@
 <ngb-tabset type="pills" justify="fill">
   <ngb-tab title="Home">
     <ng-template ngbTabContent class="ng_tab">
-      <div class="logo_container">
-        <img class="logo" [src]="logoUrl">
-        <div class="block_container">
-          <p class="down">Down</p>
-          <p class="home">home</p>
-          <p class="good">good!</p>
-        </div>
-      </div>
-      <h1 class="text-center">BAKERY & CAF&#201;</h1>
-      <hr/>
-      <div id="carousel">
-        <app-carousel></app-carousel>
-      </div>
-      <hr/>
-      <div class="contact-us">
-      <app-contact-us></app-contact-us>
-      </div>
-      <div class="announcement">
-      <app-announcements></app-announcements>
-      </div>
-    </ng-template>
+      <div class="container">
+
+        <div class="row">
+            <div class="col-md-3 header-container">
+
+             <app-header></app-header>
+             <app-contact-us class="d-none d-md-block"></app-contact-us>
+            </div>
+
+          <div class="carousel col-md-5">
+            <app-carousel></app-carousel>
+          </div>
+          <hr/>
+
+          <div class="col-md-3 align-self-end align-self-md-start">
+            <div class="contact-us d-md-none">
+              <app-contact-us></app-contact-us>
+            </div>
+            <div class="announcement">
+              <app-announcements></app-announcements>
+            </div>
+          </div>
+
+        </div> <!--Row End-->
+
+      </div> <!--Container End-->
+      </ng-template>
   </ngb-tab>
   <ngb-tab title="Menu">
     <ng-template ngbTabContent>
-      <div class="logo_container">
-        <img class="logo" [src]="logoUrl">
-        <div class="block_container">
-          <p class="down">Down</p>
-          <p class="home">home</p>
-          <p class="good">good!</p>
-        </div>
-      </div>
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-3">
+
+            <app-header></app-header>
+            <app-contact-us class="d-none d-md-block"></app-contact-us>
+          </div>
+
+            <div class="menu-carousel col-md-5">
+              <app-menu-carousel></app-menu-carousel>
+            </div>
+          <hr/>
+
+          <div class="col-md-3 align-self-end align-self-md-start">
+            <div class="contact-us d-md-none">
+              <app-contact-us></app-contact-us>
+            </div>
+            <div class="announcement">
+              <app-announcements></app-announcements>
+            </div>
+          </div>
+
+        </div> <!--Row End-->
+
+      </div> <!--Container End-->
+
     </ng-template>
   </ngb-tab>
   <ngb-tab title="About Us">
     <ng-template ngbTabContent>
-      <div class="logo_container">
-        <img class="logo" [src]="logoUrl">
-        <div class="block_container">
-          <p class="down">Down</p>
-          <p class="home">home</p>
-          <p class="good">good!</p>
-        </div>
-      </div>
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-3">
+
+            <app-header></app-header>
+            <app-contact-us class="d-none d-md-block"></app-contact-us>
+          </div>
+
+          <div class="col-md-5 about-us">
+            <app-aboutus></app-aboutus>
+          </div>
+
+          <div class="hr">
+            <hr/>
+          </div>
+          <div class="col-md-3 align-self-end align-self-md-start">
+            <div class="contact-us d-md-none">
+              <app-contact-us></app-contact-us>
+            </div>
+            <div class="announcement">
+              <app-announcements></app-announcements>
+            </div>
+          </div>
+
+        </div> <!--Row End-->
+
+      </div> <!--Container End-->
     </ng-template>
   </ngb-tab>
 </ngb-tabset>

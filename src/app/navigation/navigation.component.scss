@@ -4,11 +4,7 @@
 }
 
 @media screen and (min-width: 20em) {
-  .logo {
-    width: 80%;
-    padding: 20px;
-    margin: auto;
-  }
+
   hr {
     display: block;
     height: 1px;
@@ -16,11 +12,27 @@
     border-top: 1px solid #ccc;
     margin: 1em;
     padding: 0;
+
   }
 
-  #carousel {
-    width:80%;
-    margin:auto;
+  .carousel {
+    width:90%;
+    margin:0;
+    justify-content: center;
+    align-items: center;
+    padding:1em;
+    margin-left:1em;
+    margin-top:1em;
+  }
+
+  .menu-carousel {
+    width:100%;
+    margin:0;
+    justify-content: center;
+    align-items: center;
+    padding:1em;
+    margin-left:1em;
+    margin-top:1em;
   }
 
   .contact-us {
@@ -29,72 +41,14 @@
     height:100%;
   }
 
-  .logo_container {
-    display: inline-block;
-    margin:auto;
-    color: rgb(244, 144, 153);
-    font-size: 17px;
-    width:100%;
-  }
-
-  @mixin letter-animation {
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-delay: 2s;
-    font-weight: bold;
-  }
-
-  .down {
-    @include letter-animation;
-    animation-name: down;
-    transform: rotate(-14deg) translateX(-15px);
-  }
-
-  .home {
-    @include letter-animation;
-    animation-name: home;
-    transform: translateY(-10px);
-  }
-
-
-  .good {
-    @include letter-animation;
-    animation-name: good;
-    transform: rotate(10.5deg) translateX(-15px) translateY(-20px);
-  }
-
-
-  @keyframes down {
-    0% {color: transparent}
-    25% {color: rgb(244, 144, 153);}
-    100% {color: rgb(244, 144, 153);}
-  }
-
-  @keyframes home {
-    0% {color: transparent}
-    25% {color: transparent}
-    50% {color: rgb(244, 144, 153);}
-    100% {color: rgb(244, 144, 153);}
-  }
-
-  @keyframes good {
-    0% {color: transparent}
-    50% {color: transparent}
-    75% {color: rgb(244, 144, 153);}
-    100% {color: rgb(244, 144, 153);}
-  }
-
-  .block_container{
-    display:inline-block;
-    transform: translateX(-20px);
-  }
-
   ::ng-deep ul.nav-pills {
     background-image: url("../../assets/images/red_strip.png") !important;
   }
 
   ::ng-deep .nav-link {
     color: white;
+    font-family:Aileron, Verdana, Geneva, sans-serif;
+    font-weight: 300;
   }
 
   ::ng-deep .nav-link.active {
@@ -111,6 +65,36 @@
   }
 }
 
+@media screen and (min-width: 36em) {
+  .carousel {
+    width:100%;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .carousel {
+    padding:1.5em;
+    margin-left:1.5em;
+  }
+  .header-container{
+    /*margin-left:-20px;*/
+    widtH:30%;
+  }
+
+  .contact-us{
+    margin-right:1em;
+  }
+
+  .menu-carousel {
+  padding:0.5em;
+  margin-left:1.5em;
+  }
+
+  .about-us{
+    position:relative;
+    margin-left:1.5em;
+  }
+}
 
 /* Small devices (phones, tablets less than 48em)
 @media (min-width: 30.em) {

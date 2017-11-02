@@ -1,0 +1,17 @@
+address > a{
+  color:white;
+}
+@media screen and (min-width: 20em) {
+  h2{
+    font-size:1.7em;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  address{
+    font-size:0.65em;
+  }
+  h2{
+    font-size:0.9em;
+  }
+}

@@ -1,0 +1,54 @@
+@media screen and (min-width:20em) {
+
+.about-section {
+  margin:0.5em;
+  background-color:white;
+  color:black;
+  width:95%;
+  h4{
+    color:rgb(0,93,108);
+    padding-left:10px;
+  }
+
+
+  p{
+    font-size:12px;
+    padding-left:10px;
+    padding-right:10px;
+  }
+
+  #welcome_family{
+    transform: scale(0.7,0.7);
+  }
+
+
+}
+
+
+}
+
+@media screen and (min-width:48em) {
+  .about-section {
+    margin:1em;
+    background-color:white;
+    color:black;
+    width:100%;
+    h4{
+      color:rgb(0,93,108);
+      padding-left:10px;
+    }
+
+
+    p{
+      font-size:12px;
+      padding-left:10px;
+      padding-right:10px;
+    }
+
+    #welcome_family{
+      transform: scale(0.7,0.7);
+    }
+
+
+  }
+}
