@@ -14,7 +14,7 @@ export class CarouselComponent{
   beefTapaImg = 'assets/images/beef_tapa.jpg';
   cakeImg = 'assets/images/cake.jpg';
   cinnamonBunsImg = 'assets/images/cinnamon_buns.jpg';
-  cornedBeefImg = 'assets/images/corned_beef.png';
+  /* cornedBeefImg = 'assets/images/corned_beef.png';*/
   grilledMixedSausageImg = 'assets/images/grilled_mixed_sausage.jpg';
   sausageEggSandwichImg = 'assets/images/sausage_and_egg_sandwich.jpg';
   shepherdPieImg = 'assets/images/shepherd_pie.jpg';
