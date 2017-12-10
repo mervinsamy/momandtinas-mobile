@@ -21,8 +21,6 @@
   .an_image {
     width: 50%;
     float: left;
-    padding-right: 1em;
-    padding-bottom: 1em;
     border:1px solid white;
   }
 
@@ -30,6 +28,7 @@
     float: right;
     width: 50%;
     vertical-align: center;
+    padding-left:4px;
   }
 
   .update_header{
@@ -52,6 +51,7 @@
     float: left;
     padding-right: 0em;
     padding-bottom: 0em;
+
   }
   .update_sec{
     margin-bottom:0;
